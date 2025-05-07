@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Ruas a Estrelas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>De Ruas a Estrelas ⚽</h1>
+        
+        <div class="story" id="story">
+            Você é um morador de rua com um sonho: se tornar o melhor jogador de futebol do mundo!
+            Comece treinando nas ruas e mostre seu talento ao mundo.
+        </div>
+        
+        <div class="status">
+            Habilidade: <span id="skill">0.0</span> |
+            Dinheiro: R$ <span id="money">0.00</span> |
+            Cliques: <span id="clicks">0</span>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progress">0%</div>
+        </div>
+        
+        <div class="click-area" id="click-area">
+            <h2>Treinar Futebol</h2>
+            <p>+0.1 de habilidade por clique</p>
+        </div>
+        
+        <div class="click-buttons">
+            <button class="click-btn" id="click-5">Treinar 5x (+0.5)</button>
+            <button class="click-btn" id="click-10">Treinar 10x (+1.0)</button>
+            <button class="click-btn" id="click-100">Treinar 100x (+10.0)</button>
+            <button class="click-btn" id="click-1000">Treinar 1000x (+100.0)</button>
+        </div>
+        
+        <h2>Melhorias</h2>
+        <div class="upgrades" id="upgrades">
+            <!-- Upgrades serão adicionados dinamicamente -->
+        </div>
+        
+        <h2>Bônus Temporários</h2>
+        <div class="bonuses">
+            <button class="bonus-btn" id="bonus-2x">Drible nos Obstáculos (2x por 30s)</button>
+            <button class="bonus-btn" id="bonus-3x">Fome de Vitória (3x por 1min)</button>
+            <button class="bonus-btn" id="bonus-10x">Milagre das Ruas (10x por 15s)</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
