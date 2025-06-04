@@ -1,32 +1,59 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TradeOff - Troque Sustentável</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>TradeOff</h1>
-      <p>Troque objetos. Reduza o desperdício. Consuma com consciência.</p>
-    </header>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-    <main>
-      <div class="buttons">
-        <button onclick="showLogin()">Entrar</button>
-        <button onclick="showRegister()">Cadastrar</button>
-      </div>
+.container {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
 
-      <div id="form-container"></div>
-    </main>
+header h1 {
+  color: #2d8a4d;
+  margin-bottom: 0.5rem;
+}
 
-    <footer>
-      <p>&copy; 2025 TradeOff. Todos os direitos reservados.</p>
-    </footer>
-  </div>
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #2d8a4d;
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+.buttons button:hover {
+  background-color: #256c3a;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+input {
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 12px;
+  color: #888;
+}
